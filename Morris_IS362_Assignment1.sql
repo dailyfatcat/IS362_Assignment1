@@ -41,7 +41,6 @@ ON F.tailnum = P.tailnum
 WHERE F.year = '2013' AND F.month = '7' and F.day = '5'
 GROUP BY P.manufacturer;
 
-select * from weather;
 #How do your results compare?
 #The inner join only returns elements that are present in both tables,
 #The left outer join there is a null value for one of the manufacturer
