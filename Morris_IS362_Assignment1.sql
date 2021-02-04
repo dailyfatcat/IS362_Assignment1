@@ -4,6 +4,7 @@ IS 362
 Due 02/07/21
 */
 
+#Part 1
 #1 - How many airplanes have listed speeds?
 SELECT tailnum, speed
 FROM planes WHERE speed IS NOT NULL;
@@ -56,3 +57,6 @@ ON W.origin = F.origin
 INNER JOIN planes as P
 ON F.tailnum = P.tailnum
 WHERE w.temp > '35' ;
+
+#Part 2
+#
