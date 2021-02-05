@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0114.0916                               -->
+<workbook original-version='18.1' source-build='2020.4.1 (20204.21.0114.0916)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Assign1 (Assign1)' inline='true' name='federated.0ri1mi71v72s0115dtdtt0pugdm5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Assign1' name='excel-direct.061u0ww1wbrs4u1faz6xi0sz7985'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Sarah/Downloads/Assign1.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.061u0ww1wbrs4u1faz6xi0sz7985' name='Assign1' table='[Assign1$]' type='table'>
+          <columns gridOrigin='A1:C2001:no:A1:C2001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='distance' ordinal='0' />
+            <column datatype='string' name='tailnum' ordinal='1' />
+            <column datatype='string' name='origin' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.061u0ww1wbrs4u1faz6xi0sz7985' name='Assign1' table='[Assign1$]' type='table'>
+          <columns gridOrigin='A1:C2001:no:A1:C2001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='distance' ordinal='0' />
+            <column datatype='string' name='tailnum' ordinal='1' />
+            <column datatype='string' name='origin' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Assign1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C2001:no:A1:C2001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[Assign1]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Assign1_7DBD660ED94A4859AE0852B0AA11D719]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tailnum</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tailnum]</local-name>
+            <parent-name>[Assign1]</parent-name>
+            <remote-alias>tailnum</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Assign1_7DBD660ED94A4859AE0852B0AA11D719]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[origin]</local-name>
+            <parent-name>[Assign1]</parent-name>
+            <remote-alias>origin</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Assign1_7DBD660ED94A4859AE0852B0AA11D719]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='AvgDistance' datatype='real' name='[Calculation_956451978537934855]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([distance])/COUNT([tailnum])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Assign1' datatype='table' name='[__tableau_internal_object_id__].[Assign1_7DBD660ED94A4859AE0852B0AA11D719]' role='measure' type='quantitative' />
+      <column caption='Distance' datatype='integer' name='[distance]' role='measure' type='quantitative' />
+      <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+      <column caption='Tailnum' datatype='string' name='[tailnum]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Assign1' id='Assign1_7DBD660ED94A4859AE0852B0AA11D719'>
+            <properties context=''>
+              <relation connection='excel-direct.061u0ww1wbrs4u1faz6xi0sz7985' name='Assign1' table='[Assign1$]' type='table'>
+                <columns gridOrigin='A1:C2001:no:A1:C2001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='distance' ordinal='0' />
+                  <column datatype='string' name='tailnum' ordinal='1' />
+                  <column datatype='string' name='origin' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Distance of Airports</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Assign1 (Assign1)' name='federated.0ri1mi71v72s0115dtdtt0pugdm5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ri1mi71v72s0115dtdtt0pugdm5'>
+            <column caption='AvgDistance' datatype='real' name='[Calculation_956451978537934855]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([distance])/COUNT([tailnum])' />
+            </column>
+            <column caption='Distance' datatype='integer' name='[distance]' role='measure' type='quantitative' />
+            <column-instance column='[origin]' derivation='None' name='[none:origin:nk]' pivot='key' type='nominal' />
+            <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+            <column caption='Tailnum' datatype='string' name='[tailnum]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_956451978537934855]' derivation='User' name='[usr:Calculation_956451978537934855:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ri1mi71v72s0115dtdtt0pugdm5].[none:origin:nk]</rows>
+        <cols>[federated.0ri1mi71v72s0115dtdtt0pugdm5].[usr:Calculation_956451978537934855:qk]</cols>
+      </table>
+      <simple-id uuid='{A96EC989-CCE3-4CB8-B7D4-23B0CDA9F101}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ri1mi71v72s0115dtdtt0pugdm5].[none:Calculation_956451978529550339:qk]</field>
+            <field>[federated.0ri1mi71v72s0115dtdtt0pugdm5].[none:Calculation_956451978529816581:qk]</field>
+            <field>[federated.0ri1mi71v72s0115dtdtt0pugdm5].[none:origin:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2FB80EDC-29F0-4AD6-A23E-4DC83DB81531}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='139' name='Sheet 1' width='192'>
+      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
+      ABLt/24GevOVp1bmAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
