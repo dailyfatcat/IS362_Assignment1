@@ -58,5 +58,6 @@ INNER JOIN planes as P
 ON F.tailnum = P.tailnum
 WHERE w.temp > '35' ;
 
-#Part 2
-#
+#Part 2 The SQL user to pull data into CSV file
+#After running this query the data can be exported
+SELECT distance, tailnum, origin, year FROM flights WHERE year = '2013';
